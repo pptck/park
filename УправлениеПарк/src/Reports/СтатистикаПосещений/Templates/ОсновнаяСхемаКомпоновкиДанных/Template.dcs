@@ -7,13 +7,6 @@
 	<dataSet xsi:type="DataSetQuery">
 		<name>НаборДанных1</name>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>Атракцион</dataPath>
-			<field>Атракцион</field>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>КоличествоПосещенийНачальныйОстаток</dataPath>
 			<field>КоличествоПосещенийНачальныйОстаток</field>
 			<role>
@@ -51,9 +44,16 @@
 			<dataPath>Основание</dataPath>
 			<field>Основание</field>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидАттракциона</dataPath>
+			<field>ВидАттракциона</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
-	АктивныеПосещенияОстаткиИОбороты.Атракцион,
+	АктивныеПосещенияОстаткиИОбороты.ВидАттракциона,
 	АктивныеПосещенияОстаткиИОбороты.КоличествоПосещенийНачальныйОстаток,
 	АктивныеПосещенияОстаткиИОбороты.КоличествоПосещенийПриход,
 	АктивныеПосещенияОстаткиИОбороты.КоличествоПосещенийРасход,
@@ -77,6 +77,10 @@
 	<totalField>
 		<dataPath>КоличествоПосещенийРасход</dataPath>
 		<expression>Сумма(КоличествоПосещенийРасход)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВидАттракциона</dataPath>
+		<expression>Количество(ВидАттракциона)</expression>
 	</totalField>
 	<parameter>
 		<name>НачалоПериода</name>
@@ -168,6 +172,13 @@
 					</dcsset:lwsTitle>
 				</dcsset:item>
 			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>[Период	]</dcscor:parameter>
+					<dcsset:userSettingID>feeea8b1-7ee0-4670-8e27-141b57f42a16</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
 				<dcsset:groupItems>
 					<dcsset:item xsi:type="dcsset:GroupItemField">
@@ -185,7 +196,7 @@
 				<dcsset:item xsi:type="dcsset:StructureItemGroup">
 					<dcsset:groupItems>
 						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>Атракцион</dcsset:field>
+							<dcsset:field>ВидАттракциона</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 						</dcsset:item>

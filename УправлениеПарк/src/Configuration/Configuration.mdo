@@ -48,10 +48,15 @@
   <roles>Role.ОператорАтракциона</roles>
   <roles>Role.ПолныеПрава</roles>
   <catalogs>Catalog.Атракционы</catalogs>
-  <documents>Document.ПосещениеАтракциона</documents>
+  <catalogs>Catalog.ВидыАттракционов</catalogs>
+  <catalogs>Catalog.Номенклатура</catalogs>
+  <documents>Document.ПосещениеАттракциона</documents>
   <documents>Document.ПродажаБилета</documents>
-  <reports>Report.ПродажиПоАтракционам</reports>
+  <documents>Document.УстановкаЦенНоменклатуры</documents>
+  <enums>Enum.ВидНоменклатуры</enums>
+  <reports>Report.ПродажиПоАттракционам</reports>
   <reports>Report.СтатистикаПосещений</reports>
+  <informationRegisters>InformationRegister.ЦеныНоменклатуры</informationRegisters>
   <accumulationRegisters>AccumulationRegister.АктивныеПосещения</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.Продажи</accumulationRegisters>
 </mdclass:Configuration>
