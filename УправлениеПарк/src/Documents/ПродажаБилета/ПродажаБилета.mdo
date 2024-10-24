@@ -12,6 +12,7 @@
     <key>ru</key>
     <value>Продажа билета</value>
   </synonym>
+  <comment>Продажа билета</comment>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Document.ПродажаБилета.StandardAttribute.Number</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
@@ -127,6 +128,23 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e53867c0-289c-495f-9fd2-508e5a5df5cf">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>

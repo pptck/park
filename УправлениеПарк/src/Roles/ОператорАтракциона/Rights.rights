@@ -10,11 +10,18 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>View</name>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВидыАттракционов</name>
+		<right>
+			<name>Read</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>InputByString</name>
+			<name>Insert</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -36,23 +43,38 @@
 	<object>
 		<name>Configuration.УправлениеПарк</name>
 		<right>
-			<name>ThinClient</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>WebClient</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>MainWindowModeNormal</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>SaveUserData</name>
+			<name>MainWindowModeWorkplace</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>Output</name>
+			<name>MainWindowModeEmbeddedWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeFullscreenWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeKiosk</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>AnalyticsSystemClient</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Номенклатура</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -72,42 +94,6 @@
 		</right>
 		<right>
 			<name>Posting</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>UndoPosting</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveInsert</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractivePosting</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractivePostingRegular</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveUndoPosting</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveChangeOfPosted</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InputByString</name>
 			<value>true</value>
 		</right>
 	</object>

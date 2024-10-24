@@ -44,9 +44,15 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <roles>Role.БазоваяФункциональность</roles>
+  <roles>Role.ВыводНаПринтерФайлБуферОбмена</roles>
+  <roles>Role.ЗапускВебКлиента</roles>
+  <roles>Role.ЗапускТолстогоКлиента</roles>
+  <roles>Role.ЗапускТонкогоКлиента</roles>
   <roles>Role.Кассир</roles>
   <roles>Role.ОператорАтракциона</roles>
   <roles>Role.ПолныеПрава</roles>
+  <roles>Role.СохранениеДанныхПользователя</roles>
   <commonModules>CommonModule.НомераТелефоновКлиентСервер</commonModules>
   <constants>Constant.МаксивальнаяДоляОплатыБаллами</constants>
   <catalogs>Catalog.Атракционы</catalogs>
@@ -58,6 +64,7 @@
   <documents>Document.УстановкаЦенНоменклатуры</documents>
   <documents>Document.ШкалаБонуснойПрограммы</documents>
   <enums>Enum.ВидНоменклатуры</enums>
+  <reports>Report.ПопулярныеАттракционы</reports>
   <reports>Report.ПродажиПоАттракционам</reports>
   <reports>Report.СтатистикаПосещений</reports>
   <dataProcessors>DataProcessor.ПереходНаНовыеВерсии</dataProcessors>
@@ -66,5 +73,6 @@
   <informationRegisters>InformationRegister.ЦеныНоменклатуры</informationRegisters>
   <accumulationRegisters>AccumulationRegister.АктивныеПосещения</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.БонусныеБаллыКлентов</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ПосещенияАттракционов</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.Продажи</accumulationRegisters>
 </mdclass:Configuration>

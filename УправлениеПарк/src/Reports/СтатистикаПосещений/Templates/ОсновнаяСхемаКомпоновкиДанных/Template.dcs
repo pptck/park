@@ -7,6 +7,13 @@
 	<dataSet xsi:type="DataSetQuery">
 		<name>НаборДанных1</name>
 		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидАттракциона</dataPath>
+			<field>ВидАттракциона</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
 			<dataPath>КоличествоПосещенийНачальныйОстаток</dataPath>
 			<field>КоличествоПосещенийНачальныйОстаток</field>
 			<role>
@@ -33,8 +40,14 @@
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>Период</dataPath>
-			<field>Период</field>
+			<dataPath>ДатаПосещений</dataPath>
+			<field>ДатаПосещений</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата посещений</v8:content>
+				</v8:item>
+			</title>
 			<role>
 				<dcscom:periodNumber>1</dcscom:periodNumber>
 				<dcscom:periodType>Main</dcscom:periodType>
@@ -44,13 +57,6 @@
 			<dataPath>Основание</dataPath>
 			<field>Основание</field>
 		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ВидАттракциона</dataPath>
-			<field>ВидАттракциона</field>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
-		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	АктивныеПосещенияОстаткиИОбороты.ВидАттракциона,
@@ -58,14 +64,10 @@
 	АктивныеПосещенияОстаткиИОбороты.КоличествоПосещенийПриход,
 	АктивныеПосещенияОстаткиИОбороты.КоличествоПосещенийРасход,
 	АктивныеПосещенияОстаткиИОбороты.КоличествоПосещенийКонечныйОстаток,
-	АктивныеПосещенияОстаткиИОбороты.Период
+	АктивныеПосещенияОстаткиИОбороты.Период Как ДатаПосещений
 ИЗ
 	РегистрНакопления.АктивныеПосещения.ОстаткиИОбороты(,, День,,) КАК АктивныеПосещенияОстаткиИОбороты</query>
 	</dataSet>
-	<totalField>
-		<dataPath>КоличествоПосещенийКонечныйОстаток</dataPath>
-		<expression>Сумма(КоличествоПосещенийКонечныйОстаток)</expression>
-	</totalField>
 	<totalField>
 		<dataPath>КоличествоПосещенийНачальныйОстаток</dataPath>
 		<expression>Сумма(КоличествоПосещенийНачальныйОстаток)</expression>
@@ -79,9 +81,23 @@
 		<expression>Сумма(КоличествоПосещенийРасход)</expression>
 	</totalField>
 	<totalField>
-		<dataPath>ВидАттракциона</dataPath>
-		<expression>Количество(ВидАттракциона)</expression>
+		<dataPath>КоличествоПосещенийКонечныйОстаток</dataPath>
+		<expression>Сумма(КоличествоПосещенийКонечныйОстаток)</expression>
 	</totalField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
 	<parameter>
 		<name>НачалоПериода</name>
 		<title xsi:type="v8:LocalStringType">
@@ -96,7 +112,7 @@
 				<v8:DateFractions>DateTime</v8:DateFractions>
 			</v8:DateQualifiers>
 		</valueType>
-		<useRestriction>true</useRestriction>
+		<useRestriction>false</useRestriction>
 		<expression>&amp;Период.ДатаНачала</expression>
 	</parameter>
 	<parameter>
@@ -113,76 +129,43 @@
 				<v8:DateFractions>DateTime</v8:DateFractions>
 			</v8:DateQualifiers>
 		</valueType>
-		<useRestriction>true</useRestriction>
-		<expression>&amp;Период.ДатаОкончания</expression>
-	</parameter>
-	<parameter>
-		<name>Период	</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Период</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>v8:StandardPeriod</v8:Type>
-		</valueType>
-		<value xsi:nil="true"/>
 		<useRestriction>false</useRestriction>
+		<expression>&amp;Период.ДатаОкончания</expression>
 	</parameter>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
-		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Основной</v8:content>
+			</v8:item>
+		</dcsset:presentation>
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>КоличествоПосещенийНачальныйОстаток</dcsset:field>
-					<dcsset:lwsTitle>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>На начало</v8:content>
-						</v8:item>
-					</dcsset:lwsTitle>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>КоличествоПосещенийПриход</dcsset:field>
-					<dcsset:lwsTitle>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Продано</v8:content>
-						</v8:item>
-					</dcsset:lwsTitle>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>КоличествоПосещенийРасход</dcsset:field>
-					<dcsset:lwsTitle>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Посещено</v8:content>
-						</v8:item>
-					</dcsset:lwsTitle>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>КоличествоПосещенийКонечныйОстаток</dcsset:field>
-					<dcsset:lwsTitle>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>На конец</v8:content>
-						</v8:item>
-					</dcsset:lwsTitle>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:dataParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:use>false</dcscor:use>
-					<dcscor:parameter>[Период	]</dcscor:parameter>
-					<dcsset:userSettingID>feeea8b1-7ee0-4670-8e27-141b57f42a16</dcsset:userSettingID>
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>2bcf2c2a-d6a4-454c-b731-63fa7db76d76</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
 				<dcsset:groupItems>
 					<dcsset:item xsi:type="dcsset:GroupItemField">
-						<dcsset:field>Период</dcsset:field>
+						<dcsset:field>ДатаПосещений</dcsset:field>
 						<dcsset:groupType>Items</dcsset:groupType>
 						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 					</dcsset:item>
