@@ -44,6 +44,7 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <sessionParameters>SessionParameter.ТекущийПользователь</sessionParameters>
   <roles>Role.БазоваяФункциональность</roles>
   <roles>Role.ВыводНаПринтерФайлБуферОбмена</roles>
   <roles>Role.ЗапускВебКлиента</roles>
@@ -54,22 +55,28 @@
   <roles>Role.ПолныеПрава</roles>
   <roles>Role.СохранениеДанныхПользователя</roles>
   <commonModules>CommonModule.НомераТелефоновКлиентСервер</commonModules>
+  <commonModules>CommonModule.Пользователи</commonModules>
   <constants>Constant.МаксивальнаяДоляОплатыБаллами</constants>
   <catalogs>Catalog.Атракционы</catalogs>
   <catalogs>Catalog.ВидыАттракционов</catalogs>
   <catalogs>Catalog.Клиенты</catalogs>
   <catalogs>Catalog.Номенклатура</catalogs>
+  <catalogs>Catalog.Пользователи</catalogs>
+  <documents>Document.ПланированиеОтсутствия</documents>
   <documents>Document.ПосещениеАттракциона</documents>
   <documents>Document.ПродажаБилета</documents>
   <documents>Document.УстановкаЦенНоменклатуры</documents>
   <documents>Document.ШкалаБонуснойПрограммы</documents>
   <enums>Enum.ВидНоменклатуры</enums>
+  <enums>Enum.РолиПользователей</enums>
   <reports>Report.ПопулярныеАттракционы</reports>
   <reports>Report.ПродажиПоАттракционам</reports>
   <reports>Report.СтатистикаПосещений</reports>
   <dataProcessors>DataProcessor.ПереходНаНовыеВерсии</dataProcessors>
+  <dataProcessors>DataProcessor.ПланированиеОтпусков</dataProcessors>
   <dataProcessors>DataProcessor.РабочееМестоКассира</dataProcessors>
   <informationRegisters>InformationRegister.АктуальнаяШкалаБонуснойПрограммы</informationRegisters>
+  <informationRegisters>InformationRegister.ПлановоеОтсутствие</informationRegisters>
   <informationRegisters>InformationRegister.ЦеныНоменклатуры</informationRegisters>
   <accumulationRegisters>AccumulationRegister.АктивныеПосещения</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.БонусныеБаллыКлентов</accumulationRegisters>

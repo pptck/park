@@ -48,6 +48,21 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="0e36659b-fb8c-43a3-a04a-7d55c3047fd6">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="c6e69699-0994-4e1d-93c1-852c554eb4b8">
     <producedTypes>
       <objectType typeId="73a4963c-4746-42b1-858b-5d0b59151ea0" valueTypeId="fb88870a-851e-4bd4-af35-9c8ef4447c3e"/>

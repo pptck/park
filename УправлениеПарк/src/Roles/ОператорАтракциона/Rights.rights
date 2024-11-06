@@ -43,6 +43,14 @@
 	<object>
 		<name>Configuration.УправлениеПарк</name>
 		<right>
+			<name>ThinClient</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ThickClient</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>MainWindowModeNormal</name>
 			<value>true</value>
 		</right>
