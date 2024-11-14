@@ -30,9 +30,9 @@
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ПродажаБилета.Form.ФормаДокумента</defaultObjectForm>
   <defaultListForm>Document.ПродажаБилета.Form.ФормаСписка</defaultListForm>
-  <registerRecords>AccumulationRegister.АктивныеПосещения</registerRecords>
   <registerRecords>AccumulationRegister.Продажи</registerRecords>
   <registerRecords>AccumulationRegister.БонусныеБаллыКлентов</registerRecords>
+  <registerRecords>AccumulationRegister.АктивныеПосещения</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="ecfd1644-85a8-45bc-923c-84d35681b674">
