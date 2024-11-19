@@ -156,7 +156,7 @@
       <value>Ответственный</value>
     </synonym>
     <type>
-      <types>CatalogRef.Пользователи</types>
+      <types>CatalogRef.ПА_Пользователи</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -275,18 +275,17 @@
     </attributes>
   </tabularSections>
   <templates uuid="615ec4ef-679e-456c-ad93-f03f8234bb04">
-    <name>Билет</name>
+    <name>ПФ_MXL_Билет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Билет</value>
+    </synonym>
   </templates>
-  <commands uuid="2ef7ac2a-9bb0-4f43-b984-13afb1e7a295">
-    <name>Билет</name>
-    <group>FormCommandBarImportant</group>
-    <commandParameterType>
-      <types>DocumentRef.ПродажаБилета</types>
-    </commandParameterType>
-    <parameterUseMode>Multiple</parameterUseMode>
-    <representation>Auto</representation>
-    <picture xsi:type="core:PictureRef">
-      <picture>StdPicture.Print</picture>
-    </picture>
-  </commands>
+  <templates uuid="f34e11e6-a4bb-4a61-b91a-56604663e0bf">
+    <name>ПФ_MXL_Реклама</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реклама</value>
+    </synonym>
+  </templates>
 </mdclass:Document>

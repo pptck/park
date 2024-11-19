@@ -8,10 +8,10 @@
       <visibility>
         <common>true</common>
         <for>
-          <role>Role.ПолныеПрава</role>
+          <role>Role.ПА_ПолныеПрава</role>
         </for>
         <for>
-          <role>Role.ОператорАтракциона</role>
+          <role>Role.ОператорАттракциона</role>
         </for>
         <for>
           <value>true</value>
@@ -28,11 +28,11 @@
           <role>Role.Кассир</role>
         </for>
         <for>
-          <role>Role.ОператорАтракциона</role>
+          <role>Role.ОператорАттракциона</role>
         </for>
         <for>
           <value>true</value>
-          <role>Role.ПолныеПрава</role>
+          <role>Role.ПА_ПолныеПрава</role>
         </for>
       </visibility>
     </items>

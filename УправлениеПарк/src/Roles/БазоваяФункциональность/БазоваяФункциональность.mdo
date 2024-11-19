@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2174a42f-0b7d-4602-9888-6d4a1abe5dab">
-  <name>БазоваяФункциональность</name>
-  <synonym>
-    <key>ru</key>
-    <value>Базовая функциональность</value>
-  </synonym>
-</mdclass:Role>

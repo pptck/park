@@ -13,10 +13,10 @@
   <content>Catalog.Атракционы</content>
   <content>Catalog.ВидыАттракционов</content>
   <content>Document.ПосещениеАттракциона</content>
-  <content>Report.ПопулярныеАттракционы</content>
-  <content>Report.СтатистикаПосещений</content>
   <content>AccumulationRegister.ПосещенияАттракционов</content>
   <content>AccumulationRegister.АктивныеПосещения</content>
-  <content>Role.ОператорАтракциона</content>
-  <content>Report.ДетализацияПосещений</content>
+  <content>Role.ОператорАттракциона</content>
+  <content>CommonCommand.ОтчетыПоПосещениям</content>
+  <subsystems>Статистика</subsystems>
+  <subsystems>ОперативнаяИнформация</subsystems>
 </mdclass:Subsystem>

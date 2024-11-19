@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b681e4fe-c3e3-4ccb-a3c2-8514317610b0">
+  <name>ПА_Администрирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>П а администрирование</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ОбщаяКартинка</picture>
+  </picture>
+  <content>Catalog.ПА_Пользователи</content>
+  <content>DataProcessor.ПереходНаНовыеВерсии</content>
+  <content>Enum.РолиПользователей</content>
+  <content>Role.ПА_БазоваяФункциональность</content>
+  <content>Role.ПА_ВыводНаПринтерФайлБуферОбмена</content>
+  <content>Role.ПА_ЗапускВебКлиента</content>
+  <content>Role.ПА_ЗапускТолстогоКлиента</content>
+  <content>Role.ПА_ЗапускТонкогоКлиента</content>
+  <content>Role.ПА_ПолныеПрава</content>
+  <content>Role.ПА_СохранениеДанныхПользователя</content>
+  <content>SessionParameter.ПА_ТекущийПользователь</content>
+  <content>CommonModule.ПА_Пользователи</content>
+</mdclass:Subsystem>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8aa39f0f-1b24-4807-b3ad-a7c1c114946d">
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b9004626-915c-44c8-9cb7-25e5b627ee83">
   <name>СохранениеДанныхПользователя</name>
   <synonym>
     <key>ru</key>
